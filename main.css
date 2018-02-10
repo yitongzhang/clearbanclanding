@@ -1,0 +1,77 @@
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Regular	"proxima-nova"	400	normal	
+Medium	"proxima-nova"	500	normal	
+Semibold	"proxima-nova"	600	normal	
+*/
+
+
+html {
+	font-size: 62.5%; 
+}
+body {
+	font-size: 1.6em;
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: "proxima-nova", sans-serif;
+	background-color: white;
+	color: #6B7C96;
+}
+
+a {font-size:1.6rem; text-decoration: none; border-bottom: @borderNone;}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+	color: #113561;
+}
+
+h1 { font-size:3.2rem; line-height: 1.6;}
+h2 { font-size:2.0rem; margin-bottom: 12px;}
+h3 { font-size:1.6rem; font-family: 'Karla', sans-serif;}
+
+p {font-size:1.6rem;line-height: 1.8;color: #75889a;}
+a {color: #113561;}
+a:hover {color: #106CD6;}
+
+
+
+
+/* General
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Nav and header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/* Main
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/* Responsive
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* mobile */
+@media (max-width: 660px) {
+
+}
+
+/* tablets */
+@media (max-width: 1200px ) and (min-width: 661px)  {
+
+}
+
+
+/* hella wiiiiiide */
+@media (min-width: 1600px) {
+
+}
+
+
