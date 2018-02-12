@@ -80,6 +80,17 @@ input[type="submit"]{
 nav{
 	position: fixed;
 	width: 100%;
+	z-index: 100;
+	background-color: #232947;
+}
+nav a{
+	color: white;
+}
+nav input[type="submit"]{
+	padding:8px 16px;
+	margin-left: 16px;
+	background-color: white;
+	color: #042759	;
 }
 .navInside{
 	height: 48px;
@@ -149,6 +160,7 @@ header .headerImg{
 section{
 	padding-top: 64px;
 	padding-bottom: 64px;
+	overflow-x: hidden;
 }
 .sectionInside>h1{
 	max-width: 680px;
