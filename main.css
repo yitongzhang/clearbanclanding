@@ -11,12 +11,13 @@ html {
 	font-size: 62.5%; 
 }
 body {
-	font-size: 1.6em;
+	font-size: 1.4em;
 	line-height: 1.6;
 	font-weight: 400;
 	font-family: "proxima-nova", sans-serif;
 	background-color: white;
 	color: #6B7C96;
+	overflow-x: hidden;
 }
 
 a {font-size:1.6rem; text-decoration: none; border-bottom: @borderNone;}
@@ -26,11 +27,11 @@ h1, h2, h3, h4, h5, h6 {
 	color: #042759;
 }
 
-h1 { font-size:3.2rem; line-height: 1.6;}
-h2 { font-size:2.0rem; margin-bottom: 12px;}
-h3 { font-size:1.6rem; font-family: 'Karla', sans-serif;}
+h1 { font-size:2.6rem; line-height: 1.4;}
+h2 { font-size:1.7rem;}
+h3 { font-size:1.6rem;}
 
-p {font-size:1.6rem;line-height: 1.8;color: #75889a;}
+p {font-size:1.4rem;line-height: 1.4;color: #75889a;}
 a {color: #113561;}
 a:hover {color: #106CD6;}
 
@@ -39,16 +40,319 @@ a:hover {color: #106CD6;}
 
 /* General
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+.vPropItem img, .howstep img, .simpleContainer img{
+	width: 64px;
+}
+input[type="submit"]{
+	display: inline-block;
+	padding:12px 32px;
+	background-color: #4B2EFF;
+	border-radius: 2px;
+	font-size: 1.3rem;
+	letter-spacing: 0.2px;
+	color: white;
+	border:0px;
+}
+.cta.horizontal{
+	display: flex;
+	flex-direction: row;
+	margin-top: 32px;
+	align-items: center;
+}
+.cta.horizontal p{
+	margin-left: 24px;
+}
+.loanSummary{
+	color: #27AE60;
+	padding: 4px 12px;
+	background-color: #ECF9F1;
+	display: inline-block;
+	border: 1px solid #d8f5e4;
+	border-radius: 4px;
+}
 
 /* Nav and header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
+nav{
+	position: fixed;
+	width: 100%;
+}
+.navInside{
+	height: 48px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+}
+nav img{
+	height: 16px;
+}
+header{
+	background-color: #232947;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+}
+header body, header h1, header h2, header a, header {
+	color: white;
+}
+header .headerContent{
+	padding-top: 48px;
+	width: 40%;
+	margin-left: 10%;
+	display: flex;
+	align-items: center;
+	padding-right: 5%;
+}
+header h1{
+	margin-bottom: 24px;
+	max-width: 560px;
+}
+header .headerContentInside{}
+header .valueProp, .vPropItem{
+	display: flex;
+	flex-direction: row;
+}
+header .valueProp{
+	background-color: #1D2342;
+	padding: 24px 40px;
+	max-width: 480px;
+	border-radius: 2px;
+	justify-content: space-between;
+}
+header .button{
+}
+header .vPropItem{
+	align-items: center;
+}
+header .vPropItem h2{
+	margin-left: 24px;
+	margin-bottom: 2px;
+}
+header .headerImg img{
+	height: 100%;
+}
+header .headerImg{
+	width: 50%;
+	height: 80vh;
+}
 
 /* Main
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+section{
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+.sectionInside>h1{
+	max-width: 680px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 64px;
+}
+.sectionInside{
+	max-width: 1440px;
+	width: 80%;
+	margin: 0 auto;
+}
+section img{
+	max-width: 100%;
+}
+.logoBar p{
+	display: inline-block;
+	text-align: center;
+	border-radius: 16px;
+	padding: 4px 16px;
+	margin-bottom: 32px;
+	background-color: #F6F9FC;
+}
+.logoBar img{
+	margin:0 auto;
+	max-width: 800px;
+}
+.logoBar{
+	text-align: center;
+}
 
+.howstepWrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.howstep{
+	border-radius: 16px;
+	padding: 0px 32px 16px 32px;
+	box-shadow: 0px 1px 8px rgba(0,0,0,0.05);
+	max-width:280px;
+	border: 1px solid rgba(0,0,0,0.04);
+}
+.howstep img{
+	position: relative;
+	top: -32px;
+	filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.2));
+}
+.howstep h2, .howstep p{
+	position: relative;
+	top: -24px;	
+	margin-bottom: 8px;
+}
+.howstep:nth-child(3){
+	margin-right: 0;
+}
+.testimonials{
+	background-color: #F6F9FC;
+	position: relative;
+}
+.testimonial:nth-child(1){
+	display: flex;
+	flex-direction: row;
+	margin-top: 128px;
+}
+.testimonial:nth-child(2){
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: 128px;
+}
+.testimonialContent{
+	text-align: left;
+	width: 40%;
+	min-width: 300px;
+	max-width: 520px;
+	position: relative;
+}
+.testimonialContent p{
+	font-size: 1.6rem;
+	line-height: 1.6;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+.testimonialContent img{
+	width: 80px;
+	height: 80px;
+	margin-right:8px;
+}
+.quote{
+	position: absolute;
+	left: -88px;
+	width: 64px !important;
+	height: auto !important;
+}
+.userGroup{
+	display: flex;
+	flex-direction: row;
+}
+.userGroup .userCaption{
+	/*background-color: white;*/
+	padding: 8px 16px;
+	border-radius: 4px;
+	/*border: 1px solid #e8eef5;*/
+}
+.userGroup h2{
+	margin-bottom: 2px;
+}
+.testimonialImg{
+	position: relative;
+}
+.testimonial:nth-child(1) .testimonialImg{right: -160px;}
+.testimonial:nth-child(2) .testimonialImg{left: -160px;}
+.testimonialImg img{
+	border-radius: 4px;
+}
+
+.texture{
+	position: absolute;
+}
+.texture1{
+	width: 700px;
+	top:10%;
+	left: -20%;
+}
+.texture2{
+	width: 500px;
+	right: -20%;
+	bottom: 0%;
+}
+
+.investInIdeas .sectionInside{
+	max-width: none;
+	width: auto;
+}
+
+.ideaCarousel{
+	display: flex;
+	flex-direction: row;
+
+}
+.ideaCarousel img{
+	height: 480px;
+	border-radius: 3px 3px 0px 0px;
+}
+.investInIdeas{
+	padding-top: 128px;
+	background-color: #F6F9FC;
+}
+.applyingIsSimple, .signUpNow, footer{
+	background-color: #232947;
+}
+.ideaGroup{
+	background-color: white;
+	border-radius: 4px;
+	border: 1px solid #e8eef5;
+	display: inline-block;
+}
+.ideaDescription{
+	padding: 0px 24px 8px 24px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.applyingIsSimple h1, .applyingIsSimple h2{
+	color: white;
+}
+
+.simpleContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}	
+.simpleItem{
+	border-radius: 16px;
+	padding: 0px 32px 16px 32px;
+	box-shadow: 0px 1px 8px rgba(0,0,0,0.05);
+	max-width:280px;
+	border: 1px solid rgba(0,0,0,0.04);
+	background-color: #1D2342;
+}
+.simpleItem img{
+	position: relative;
+	top: -32px;
+	filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.2));
+}
+.simpleItem:first-child{
+	margin-right: 64px;
+}
+.simpleItem h2, .simpleItem p{
+	position: relative;
+	top: -24px;	
+	margin-bottom: 8px;
+}
+
+.signUpNow .sectionInside{
+	background-color: white;
+	border-radius: 2px;
+	padding: 48px 24px;
+	display: flex;
+	flex-direction: row;
+}
+.signUpNow h1{
+	text-align: left;
+	margin: 0px 0px;
+}
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
