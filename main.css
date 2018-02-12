@@ -153,6 +153,8 @@ header .headerImg img{
 header .headerImg{
 	width: 50%;
 	height: 80vh;
+	-webkit-clip-path: polygon(12% 0, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(12% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 /* Main
@@ -403,7 +405,40 @@ footer .footRow:first-child{
 
 /* mobile */
 @media (max-width: 660px) {
-
+	.navInside{
+		width: 90%;
+	}
+	header{
+		flex-direction: column;
+	}
+	header .headerImg{
+		width: 100%;
+		height:50vh;
+		display: none;
+		-webkit-clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
+		clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
+	}
+	header .headerContent{
+		margin-left:5%;
+		width: 90%;
+		padding-top: 64px;
+	}
+	header .valueProp{
+		flex-direction: column;
+		padding:16px 32px;
+	}
+	header .vPropItem:first-child{
+		margin-bottom: 32px;
+	}
+	.vPropItem img, .howstep img, .simpleContainer img{
+		width: 48px;
+	}
+	.howstepWrapper{
+		flex-direction: column;
+	}
+	.howstep{
+		margin-bottom: 48px;
+	}
 }
 
 /* tablets */
