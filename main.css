@@ -413,7 +413,7 @@ footer .footRow:first-child{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* mobile */
-@media (max-width: 660px) {
+@media (max-width: 700px) {
 	.navInside,.sectionInside{
 		width: 90%;
 	}
@@ -437,6 +437,7 @@ footer .footRow:first-child{
 		padding:0 0;
 		margin-bottom: 48px;
 		background-color: #232947;
+		max-width: none;
 	}
 	header h1{
 		margin-bottom:48px;
@@ -457,11 +458,18 @@ footer .footRow:first-child{
 	.vPropItem img, .howstep img, .simpleContainer img{
 		width: 64px;
 	}
+	.howItWorks .sectionInside{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
 	.howstepWrapper{
 		flex-direction: column;
 	}
 	.howstep{
 		margin-bottom: 48px;
+		max-width: 360px;
 	}
 	.cta.horizontal{
 		flex-direction: column;
@@ -502,15 +510,22 @@ footer .footRow:first-child{
 	}
 	.slick-prev{left: 25%;}
 	.slick-next{right: 25%;}
+	.simpleItem{
+		max-width: 360px;
+	}
 	.simpleItem:first-child{
 		margin-right: 0px;
 		margin-bottom: 64px;
 	}
 	.simpleContainer{
 		flex-direction:column;
+		align-items: center;
 	}
 	.testimonialContent{
 		min-width:100%;
+	}
+	.testimonials{
+		overflow-y: hidden;
 	}
 	.signUpNow .sectionInside{
 		flex-direction:column;
@@ -531,11 +546,34 @@ footer .footRow:first-child{
 	}
 	footer .footRow{
 	}
+
 }
 
 /* tablets */
-@media (max-width: 1200px ) and (min-width: 661px)  {
-
+@media (max-width: 1200px ) and (min-width: 701px)  {
+	.howstep{
+		margin-right: 16px;
+	}
+	.testimonial:nth-child(1) .testimonialImg{
+		right: -80px;
+	}
+	.testimonial:nth-child(2) .testimonialImg{
+		left:-80px;
+	}
+	header .headerImg img{
+		position: relative;
+		right: 30%;
+	}
+	.vPropItem img{
+		width: 32px;
+	}
+	header .valueProp{
+		padding:24px 24px;
+	}
+	header .vPropItem h2{
+		margin-left: 8px;
+		font-size:1.4rem;
+	}
 }
 
 
