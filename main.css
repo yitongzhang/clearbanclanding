@@ -204,7 +204,9 @@ section img{
 .logoBar{
 	text-align: center;
 }
-
+.logoBar .mobileLogos{
+	display: none;
+}
 .howstepWrapper{
 	display: flex;
 	flex-direction: row;
@@ -412,7 +414,7 @@ footer .footRow:first-child{
 
 /* mobile */
 @media (max-width: 660px) {
-	.navInside{
+	.navInside,.sectionInside{
 		width: 90%;
 	}
 	header{
@@ -438,6 +440,7 @@ footer .footRow:first-child{
 	}
 	header h1{
 		margin-bottom:48px;
+		text-align: center;
 	}
 	header .vPropItem{
 		background-color: #1D2342;
@@ -448,8 +451,11 @@ footer .footRow:first-child{
 	header .vPropItem:first-child{
 		margin-bottom: 2px;
 	}
+	.testimonial:nth-child(1){
+		margin-top: 48px;
+	}
 	.vPropItem img, .howstep img, .simpleContainer img{
-		width: 48px;
+		width: 64px;
 	}
 	.howstepWrapper{
 		flex-direction: column;
@@ -460,7 +466,7 @@ footer .footRow:first-child{
 	.cta.horizontal{
 		flex-direction: column;
 	}
-	.cta.horizontal input[type="submit"]{
+	.cta.horizontal input[type="submit"], .signUpNow input[type="submit"]{
 		width: 100%;
 		margin-bottom: 16px;
 	}
@@ -468,11 +474,63 @@ footer .footRow:first-child{
 		text-align: center;
 		margin-bottom: 32px;
 	}
+	.logoBar .desktopLogos{display: none;}
+	.logoBar .mobileLogos{
+		display: block;
+		width: 100%;
+	}
+	.texture1{left: -70%}
+	.texture2{right: -70%}
+	.quote{display: none;}
 	nav img{
 		height: 12px;
 	}
 	h1{font-size: 2.4rem;}
 	a{font-size: 1.4rem;}
+	.investInIdeas h1{
+		width: 90%;
+	}
+	.ideaCarousel img{
+		width: 320px;
+	}
+	.ideaGroup{
+		width: 320px;
+		margin-right:8px;
+	}
+	.ideaDescription{
+		padding:8px 8px 8px 8px;
+	}
+	.slick-prev{left: 25%;}
+	.slick-next{right: 25%;}
+	.simpleItem:first-child{
+		margin-right: 0px;
+		margin-bottom: 64px;
+	}
+	.simpleContainer{
+		flex-direction:column;
+	}
+	.testimonialContent{
+		min-width:100%;
+	}
+	.signUpNow .sectionInside{
+		flex-direction:column;
+		max-width: 80%;
+		text-align: center;
+	}
+	.signUpNow{
+		padding-bottom: 24px;
+	}
+	.signUpNow h1{
+		text-align: center;
+	}
+	.cta.vertical{
+		margin-left: 0;
+	}
+	.signUpNow h2{
+		margin: 16px auto;
+	}
+	footer .footRow{
+	}
 }
 
 /* tablets */
