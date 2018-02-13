@@ -74,13 +74,23 @@ input[type="submit"]{
 	border: 1px solid #d8f5e4;
 	border-radius: 4px;
 }
+.slick-next, .slick-prev{
+	top: auto !important;
+	z-index: 100;
+	bottom: -36px;
+}
+.slick-prev:before,.slick-next:before  {
+  color: #232947;
+}
+.slick-prev{left: 40%;}
+.slick-next{right: 40%;}
 
 /* Nav and header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav{
 	position: fixed;
 	width: 100%;
-	z-index: 100;
+	z-index: 1000;
 	background-color: #232947;
 }
 nav a{
@@ -299,12 +309,8 @@ section img{
 	width: auto;
 }
 
-.ideaCarousel{
-	display: flex;
-	flex-direction: row;
-	width: 2656px;
-	margin-left: -250px;
-}
+.ideaCarousel{}
+
 .ideaCarousel img{
 	width: 640px;
 	border-radius: 3px 3px 0px 0px;
